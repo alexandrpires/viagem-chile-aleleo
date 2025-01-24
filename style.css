@@ -20,6 +20,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   color: rgb(20, 20, 20);
   gap: 32px;
+  padding: 20px; /* Adiciona margem interna */
 }
 
 .title {
@@ -41,4 +42,11 @@ body {
 
 .name {
   font-size: 16px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .countdown {
+    padding: 16px; /* Um pouco menos de padding em telas pequenas */
+  }
 }
